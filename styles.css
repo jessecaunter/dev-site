@@ -52,7 +52,7 @@ nav .btn {
 }
 
 /* Homepage Styles */
-#homepage {
+.homepage {
     background: url(img/homepage-hero.jpg);
     background-size: cover;
     background-position: center 20%;
@@ -60,7 +60,7 @@ nav .btn {
 }
 
 @media screen and (max-width: 768px) {
-    #homepage {
+    .homepage {
         background-position: center top;
     }
 }
@@ -80,17 +80,18 @@ nav .btn {
 }
 
 /* About Page Styles */
-#about-hero {
+.about-hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: url(img/about-hero.jpg);
     background-size: cover;
+    background-position: center 20%;
     height: 36rem;
 }
 
-#about-hero h1 {
+.about-hero h1 {
     font-size: 3rem;
     color: var(--color-ghost-white);
     background-color: var(--color-rose-taupe);
@@ -99,7 +100,7 @@ nav .btn {
     margin: 1rem;
 }
 
-#about-hero h2 {
+.about-hero h2 {
     font-size: 1.6rem;
     color: var(--color-ghost-white);
     background-color: var(--color-gray-silver);
@@ -108,7 +109,7 @@ nav .btn {
     margin: 1rem;
 }
 
-#skills-section {
+.skills-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -117,12 +118,12 @@ nav .btn {
     background-color: var(--color-ivory);
 }
 
-#skills-section h3 {
+.skills-section h3 {
     margin: 0 auto;
     font-size: 1.8rem;
 }
 
-#skills-container {
+.skills-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -145,10 +146,19 @@ nav .btn {
     max-width: 30%;
 }
 
+.skill h4 {
+    font-size: 1.3rem;
+}
+
 .skill-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
     background-color: white;
-    padding: 1rem;
+    padding: 1.6rem;
+    width: 7rem;
+    height: 7rem;
 }
 
 .skill-img-container .gif-img {
@@ -163,12 +173,8 @@ nav .btn {
     display: block;
 }
 
-.skill:hover h4 {
-    padding-top: 4px;
-}
-
 @media screen and (max-width: 768px) {
-    #skills-container {
+    .skills-container {
         flex-direction: column;
         align-items: center;
     }
@@ -202,14 +208,113 @@ nav .btn {
     }
 }
 
-#your-dev-section {
+.projects-section {
+    background: var(--color-light-yellow-green);
+    padding: 2rem 0;
+}
+
+.projects-section h3 {
+    margin: 0 auto;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding-top: 2rem;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.project {
+    background: var(--color-ghost-white);
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin-bottom: 2rem;
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project-img-container {
+    height: 150px;
+    overflow: hidden;
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.project-details {
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+.project-details h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.project-details p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.project-details .btn {
+    background: var(--color-light-yellow-green);
+    border: none;
+    padding: 0.5rem 1.2rem;
+    color: var(--color-rose-taupe);
+    font-weight: bold;
+    font-family: "Acme", sans-serif;
+    margin-top: 1rem;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.project-details .btn:hover {
+    background: var(--color-rose-taupe);
+    color: var(--color-ghost-white);
+}
+
+@media screen and (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 80%;
+        max-width: 100%;
+        margin: 1rem 0;
+    }
+}
+
+.my-philosophy-section {
     display: flex;
     justify-content: center;
     background-color: var(--color-ghost-white);
     padding: 4rem;
 }
 
-#your-dev-card {
+.my-philosophy-card {
     width: 40rem;
     padding: 1.6rem;
     display: flex;
@@ -221,40 +326,40 @@ nav .btn {
     border-bottom: 8px solid var(--color-rose-taupe);
 }
 
-#your-dev-card-text {
+.my-philosophy-card-text {
     width: 60%;
 }
 
-#your-dev-card-text h3 {
+.my-philosophy-card-text h3 {
     margin: 0;
 }
 
-#your-dev-card img {
+.my-philosophy-card img {
     border-radius: 1rem;
 }
 
 @media screen and (max-width: 768px) {
-    #your-dev-card {
+    .my-philosophy-card {
         width: 90%;
         padding: 1.2rem;
     }
 
-    #your-dev-card-text {
+    .my-philosophy-card-text {
         padding: 0 1rem;
     }
 }
 
 @media screen and (max-width: 480px) {
-    #your-dev-card {
+    .my-philosophy-card {
         flex-direction: column;
         align-items: center;
     }
 
-    #your-dev-card img {
+    .my-philosophy-card img {
         margin-bottom: 1rem;
     }
 
-    #your-dev-card-text {
+    .my-philosophy-card-text {
         width: 100%;
     }
 }
@@ -266,38 +371,38 @@ footer {
     text-align: center;
 }
 
-#footer-container {
+.footer-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#footer-container a {
+.footer-container a {
     color: var(--color-rose-taupe);
     text-decoration: none;
     margin: 0.5rem 0;
     font-weight: bold;
 }
 
-#footer-container a:hover {
+.footer-container a:hover {
     color: var(--color-gray-silver);
 }
 
-#footer-container p {
+.footer-container p {
     margin: 0.5rem 0;
     font-weight: bold;
 }
 
-#footer-container p a {
+.footer-container p a {
     color: var(--color-rose-taupe);
 }
 
-#footer-container p a:hover {
+.footer-container p a:hover {
     color: var(--color-gray-silver);
 }
 
 @media screen and (max-width: 768px) {
-    #footer-container {
+    .footer-container {
         align-items: center;
     }
 }
