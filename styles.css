@@ -7,6 +7,10 @@
     --color-light-yellow-green: #F2F6DD;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 html, body {
     --font-size: 16px;
     margin: 0;
@@ -171,8 +175,9 @@ nav .btn {
     border-radius: 50%;
     background-color: white;
     padding: 1.6rem;
-    width: 7rem;
-    height: 7rem;
+    width: 10rem;
+    height: 10rem;
+    box-shadow: 0 0rem 0.8rem rgba(0, 0, 0, 0.1) inset;
 }
 
 .skill-img-container .gif-img {
@@ -220,6 +225,11 @@ nav .btn {
     .skill:nth-child(odd) {
         flex-direction: column;
     }
+
+    .skill-img-container > img {
+        width: 90px;
+        height: 90px;
+    }
 }
 
 .projects-section {
@@ -249,7 +259,8 @@ nav .btn {
 
 .project {
     background: var(--color-ghost-white);
-    border-radius: 12rem;
+    border-bottom-left-radius: 12rem;
+    border-bottom-right-radius: 12rem;
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
     width: 30%;
     margin-bottom: 2rem;
@@ -315,8 +326,8 @@ nav .btn {
     }
 
     .project {
-        width: 80%;
-        max-width: 100%;
+        width: 30rem;
+        max-width: 95%;
         margin: 1rem 0;
     }
 }
