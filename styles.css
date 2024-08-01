@@ -18,13 +18,13 @@ html, body {
     font-size: var(--font-size);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     html, body {
         --font-size: 15px;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
     html, body {
         font-size: 14px;
     }
@@ -77,7 +77,7 @@ nav .btn {
     background-attachment: fixed;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .homepage {
         background-position: center top;
     }
@@ -192,7 +192,7 @@ nav .btn {
     display: block;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .skills-container {
         flex-direction: column;
         align-items: center;
@@ -216,7 +216,7 @@ nav .btn {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
     .skill {
         flex-direction: column;
         text-align: center;
@@ -319,7 +319,7 @@ nav .btn {
     color: var(--color-ghost-white);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .projects-container {
         flex-direction: column;
         align-items: center;
@@ -363,7 +363,7 @@ nav .btn {
     border-radius: 1rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .my-philosophy-card {
         width: 90%;
         padding: 1.2rem;
@@ -374,7 +374,7 @@ nav .btn {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
     .my-philosophy-card {
         flex-direction: column;
         align-items: center;
@@ -426,13 +426,13 @@ footer {
     color: var(--color-gray-silver);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .footer-container {
         align-items: center;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
     footer {
         padding: 1.5rem 0.5rem;
     }
