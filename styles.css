@@ -248,7 +248,7 @@ nav .btn {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: start;
+    align-items: stretch;
     padding-top: 2rem;
     flex-wrap: wrap;
     width: 90%;
@@ -289,17 +289,23 @@ nav .btn {
 
 .project-details {
     padding: 1rem 1rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     flex-grow: 1;
 }
 
 .project-details h4 {
     font-size: 1.3rem;
     margin-bottom: 1rem;
+    flex: 0 0 auto;
 }
 
 .project-details p {
     font-size: 1rem;
     margin-bottom: 1rem;
+    flex: 1 1 auto;
 }
 
 .project-details .btn {
@@ -312,6 +318,7 @@ nav .btn {
     margin-top: 1rem;
     cursor: pointer;
     display: inline-block;
+    flex: 0 0 auto;
 }
 
 .project-details .btn:hover {
