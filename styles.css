@@ -12,27 +12,24 @@
 }
 
 html, body {
-    --font-size: 16px;
+    --font-size: 14px;
     margin: 0;
     padding: 0;
     font-size: var(--font-size);
-}
-
-@media screen and (max-width: 992px) {
-    html, body {
-        --font-size: 15px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    html, body {
-        font-size: 14px;
-    }
-}
-
-body {
     font-family: "Acme", sans-serif;
     color: var(--color-rose-taupe);
+}
+
+@media screen and (min-width: 600px) {
+    html, body {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    html, body {
+        --font-size: 16px;
+    }
 }
 
 /* Global Styles */
@@ -73,13 +70,13 @@ nav .btn {
 .homepage {
     background: url(img/homepage-hero.jpg);
     background-size: cover;
-    background-position: center 20%;
+    background-position: 10% top;
     background-attachment: fixed;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
     .homepage {
-        background-position: center top;
+        background-position: center 40%;
     }
 }
 
