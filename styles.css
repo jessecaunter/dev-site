@@ -176,11 +176,6 @@ nav .btn {
     box-shadow: 0 0rem 0.8rem rgba(0, 0, 0, 0.1) inset;
 }
 
-/* .skill-img-container > img {
-    width: 90px;
-    height: 90px;
-} */
-
 .skill-img-container .gif-img {
     display: none;
 }
@@ -237,9 +232,9 @@ nav .btn {
 
 .projects-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: center;
     padding-top: 2rem;
     flex-wrap: wrap;
     width: 90%;
@@ -253,7 +248,9 @@ nav .btn {
     border-bottom-left-radius: 12rem;
     border-bottom-right-radius: 12rem;
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
-    width: 30%;
+    width: 30rem;
+    max-width: 95%;
+    margin: 1rem 0;
     margin-bottom: 2rem;
     transition: transform 0.2s ease-in-out;
     text-align: center;
@@ -317,16 +314,14 @@ nav .btn {
     color: var(--color-ghost-white);
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
     .projects-container {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        align-items: stretch;
     }
 
     .project {
-        width: 30rem;
-        max-width: 95%;
-        margin: 1rem 0;
+        width: 30%;
     }
 }
 
@@ -338,10 +333,10 @@ nav .btn {
 }
 
 .my-philosophy-card {
-    width: 40rem;
-    padding: 1.6rem;
+    width: 90%;
+    padding: 1.2rem;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     background-color: var(--color-light-yellow-green);
@@ -350,7 +345,8 @@ nav .btn {
 }
 
 .my-philosophy-card-text {
-    width: 60%;
+    width: 100%;
+    padding: 0 1rem;
 }
 
 .my-philosophy-card-text h3 {
@@ -359,23 +355,19 @@ nav .btn {
 
 .my-philosophy-card img {
     border-radius: 1rem;
+    margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 600px) {
     .my-philosophy-card {
-        width: 90%;
-        padding: 1.2rem;
-    }
-
-    .my-philosophy-card-text {
-        padding: 0 1rem;
+        width: 30rem;
+        padding: 1.6rem;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 992px) {
     .my-philosophy-card {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row-reverse;
     }
 
     .my-philosophy-card img {
@@ -383,7 +375,7 @@ nav .btn {
     }
 
     .my-philosophy-card-text {
-        width: 100%;
+        width: 60%;
     }
 }
 
