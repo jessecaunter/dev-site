@@ -247,19 +247,21 @@ nav .btn {
     background: var(--color-ghost-white);
     border-bottom-left-radius: 12rem;
     border-bottom-right-radius: 12rem;
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.3rem 0.4rem rgba(0, 0, 0, 0.1);
     width: 30rem;
     max-width: 95%;
     margin: 1rem 0;
     margin-bottom: 2rem;
-    transition: transform 0.2s ease-in-out;
     text-align: center;
     display: flex;
     flex-direction: column;
+    transition: box-shadow 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 
 .project:hover {
-    transform: translateY(-1rem);
+    transform: scale(1.02, 1.02);
+    box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
 }
 
 .project-img-container {
@@ -330,6 +332,11 @@ nav .btn {
 
     .project {
         width: 30%;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .project:hover {
+        transform: translateY(-1rem);
     }
 }
 
