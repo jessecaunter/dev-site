@@ -382,7 +382,7 @@ nav .btn {
 /* Footer Styles */
 footer {
     background-color: var(--color-ghost-white);
-    padding: 2rem 1rem;
+    padding: 1.5rem 0.5rem;
     text-align: center;
 }
 
@@ -416,14 +416,8 @@ footer {
     color: var(--color-gray-silver);
 }
 
-@media screen and (max-width: 992px) {
-    .footer-container {
-        align-items: center;
-    }
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
     footer {
-        padding: 1.5rem 0.5rem;
+        padding: 2rem 1rem;
     }
 }
