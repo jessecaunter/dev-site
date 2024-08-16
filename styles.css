@@ -175,7 +175,7 @@ nav .btn {
     margin: 1rem 0;
     text-align: center;
     flex-grow: 1;
-    max-width: 100%;
+    max-width: 20rem;
 }
 
 .skill h4 {
@@ -209,6 +209,8 @@ nav .btn {
     .skill {
         flex-direction: row;
         text-align: left;
+        width: 80%;
+        max-width: 80%;
     }
 
     .skill:nth-child(odd) {
