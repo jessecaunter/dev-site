@@ -5,6 +5,11 @@
     --color-gray-silver: #ada39e;
     --color-ivory: #ffffef;
     --color-light-yellow-green: #F2F6DD;
+
+    /* Breakpoints:
+    tablet: 600px;
+    desktop: 768px;
+    large-desktop: 992px */
 }
 
 * {
@@ -22,13 +27,19 @@ html, body {
 
 @media screen and (min-width: 600px) {
     html, body {
-        font-size: 15px;
+        --font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    html, body {
+        --font-size: 16px;
     }
 }
 
 @media screen and (min-width: 992px) {
     html, body {
-        --font-size: 16px;
+        --font-size: 17px;
     }
 }
 
@@ -124,6 +135,12 @@ nav .btn {
     margin: 1rem;
 }
 
+@media screen and (min-width: 600px) {
+    .about-hero h2 {
+        max-width: 40rem;
+    }
+}
+
 .skills-section {
     display: flex;
     flex-direction: column;
@@ -199,22 +216,35 @@ nav .btn {
     }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
     .skills-container {
         flex-direction: row;
+        justify-content: center;
+    }
+
+    .skill {
+        width: 40%;
+        max-width: 40%;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 1.5rem;
+    }
+
+    .skill:nth-child(odd) {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .skills-container {
+        justify-content: center;
         align-items: start;
     }
 
     .skill {
         width: 30%;
         max-width: 30%;
-        flex-direction: column;
         justify-content: center;
-        text-align: center;
-    }
-
-    .skill:nth-child(odd) {
-        flex-direction: column;
     }
 }
 
