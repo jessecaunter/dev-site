@@ -7,9 +7,10 @@
     --color-light-yellow-green: #F2F6DD;
 
     /* Breakpoints:
-    tablet: 600px;
-    desktop: 768px;
-    large-desktop: 992px */
+    tablet-portrait: 600px;
+    tablet-landscape: 768px;
+    desktop: 992px
+    large-desktop: 1200px */
 }
 
 * {
@@ -40,6 +41,12 @@ html, body {
 @media screen and (min-width: 992px) {
     html, body {
         --font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    html, body {
+        --font-size: 18px;
     }
 }
 
