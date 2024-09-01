@@ -24,6 +24,7 @@ html, body {
     font-size: var(--font-size);
     font-family: "Acme", sans-serif;
     color: var(--color-rose-taupe);
+    line-height: 1.6;
 }
 
 @media screen and (min-width: 600px) {
