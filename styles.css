@@ -94,10 +94,6 @@ figure, blockquote, dl, dd {
     );
 }
 
-* {
-    box-sizing: border-box;
-}
-
 html, body {
     --font-size: 14px;
     margin: 0;
