@@ -37,6 +37,63 @@ figure, blockquote, dl, dd {
     large-desktop: 1200px */
 }
 
+/* Utopia fluid type scales */
+/* @link https://utopia.fyi/type/calculator?c=320,17,1.2,1500,20,1.333,4,0,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+    --fluid-min-width: 320;
+    --fluid-max-width: 1500;
+
+    --fluid-screen: 100vw;
+    --fluid-bp: calc(
+        (var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) /
+        (var(--fluid-max-width) - var(--fluid-min-width))
+    );
+}
+
+@media screen and (min-width: 1500px) {
+    :root {
+        --fluid-screen: calc(var(--fluid-max-width) * 1px);
+    }
+}
+
+:root {
+    --f-0-min: 17.00;
+    --f-0-max: 20.00;
+    --step-0: calc(
+        ((var(--f-0-min) / 16) * 1rem) + (var(--f-0-max) - var(--f-0-min)) *
+        var(--fluid-bp)
+    );
+
+    --f-1-min: 20.40;
+    --f-1-max: 26.66;
+    --step-1: calc(
+        ((var(--f-1-min) / 16) * 1rem) + (var(--f-1-max) - var(--f-1-min)) *
+        var(--fluid-bp)
+    );
+
+    --f-2-min: 24.48;
+    --f-2-max: 35.54;
+    --step-2: calc(
+        ((var(--f-2-min) / 16) * 1rem) + (var(--f-2-max) - var(--f-2-min)) *
+        var(--fluid-bp)
+    );
+
+    --f-3-min: 29.38;
+    --f-3-max: 47.37;
+    --step-3: calc(
+        ((var(--f-3-min) / 16) * 1rem) + (var(--f-3-max) - var(--f-3-min)) *
+        var(--fluid-bp)
+    );
+
+    --f-4-min: 35.25;
+    --f-4-max: 63.15;
+    --step-4: calc(
+        ((var(--f-4-min) / 16) * 1rem) + (var(--f-4-max) - var(--f-4-min)) *
+        var(--fluid-bp)
+    );
+}
+
 * {
     box-sizing: border-box;
 }
