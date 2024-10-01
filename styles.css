@@ -128,8 +128,9 @@ html, body {
     border: none;
     padding: 0.5rem 1.2rem;
     color: var(--color-rose-taupe);
-    font-weight: bold;
+    font-size: var(--step-0);
     font-family: "Acme", sans-serif;
+    font-weight: bold;
     margin-top: 1rem;
     cursor: pointer;
 }
@@ -140,7 +141,8 @@ html, body {
 }
 
 .underline {
-    border-bottom: 0.15rem solid var(--color-ghost-white);
+    padding-bottom: 0.2rem;
+    border-bottom: 0.2rem solid var(--color-ghost-white);
 }
 
 /* Navigation */
@@ -173,6 +175,10 @@ nav .btn {
 .landing-hero {
     margin: 10%;
     width: 80%;
+}
+
+.hero-tagline {
+    font-size: var(--step-2);
 }
 
 .landing-hero .hero-tagline{
