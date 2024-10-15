@@ -147,6 +147,7 @@ figure, blockquote, dl, dd {
     --space-2xl-3xl: calc(((var(--fc-2xl-min) / 16) * 1rem) + (var(--fc-3xl-max) - var(--fc-2xl-min)) * var(--fluid-bp));
 
     /* Custom pairs */
+    --space-xs-m: calc(((var(--fc-xs-min) / 16) * 1rem) + (var(--fc-m-max) - var(--fc-xs-min)) * var(--fluid-bp));
     --space-s-l: calc(((var(--fc-s-min) / 16) * 1rem) + (var(--fc-l-max) - var(--fc-s-min)) * var(--fluid-bp));
     --space-xl-3xl: calc(((var(--fc-xl-min) / 16) * 1rem) + (var(--fc-3xl-max) - var(--fc-xl-min)) * var(--fluid-bp));
 }
@@ -181,7 +182,11 @@ html, body {
 
 /* Utility Classes */
 .u-flow > * + * {
-    margin-top: var(--space-s);
+    margin-block-start: var(--space-s);
+}
+
+.u-flow--m > * + * {
+    margin-block-start: var(--space-m);
 }
 
 /* Global Styles */
@@ -216,7 +221,7 @@ html, body {
     padding: 0 var(--space-3xs);
 }
 
-nav.u-flow {
+.nav-home {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -225,7 +230,7 @@ nav.u-flow {
     gap: var(--space-xs-s);
 }
 
-nav.u-flow a{
+.nav-home a{
     margin: 0;
 }
 
@@ -274,7 +279,6 @@ nav.u-flow a{
     background-color: var(--color-rose-taupe);
     padding: var(--space-3xs) var(--space-xs);
     border-radius: 0.8rem;
-    margin: var(--space-s);
 }
 
 .about-hero p {
@@ -283,7 +287,7 @@ nav.u-flow a{
     background-color: var(--color-gray-silver);
     padding: var(--space-3xs) var(--space-xs);
     border-radius: 0.8rem;
-    margin: var(--space-s);
+    max-width: 1200px;
 }
 
 .skills-section {
@@ -305,7 +309,6 @@ nav.u-flow a{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-top: var(--space-m-l);
     padding: 0 var(--space-xs-s);
     flex-wrap: wrap;
     width: 100%;
@@ -365,6 +368,7 @@ nav.u-flow a{
     .skills-container {
         flex-direction: row;
         justify-content: center;
+        align-items: flex-start;
     }
 
     .skill {
@@ -379,10 +383,6 @@ nav.u-flow a{
 }
 
 @media screen and (min-width: 992px) {
-    .skills-container {
-        align-items: start;
-    }
-
     .skill {
         max-width: 28%;
         justify-content: center;
@@ -408,7 +408,6 @@ nav.u-flow a{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin-top: var(--space-m-l);
     padding: 0 var(--space-xs-s);
     flex-wrap: wrap;
     width: 100%;
@@ -458,7 +457,7 @@ nav.u-flow a{
 }
 
 .project-details {
-    padding: var(--space-m) var(--space-xs-s) var(--space-xl);
+    padding: var(--space-m) var(--space-xs-m) var(--space-xl);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -472,7 +471,7 @@ nav.u-flow a{
 }
 
 .project-details p {
-    margin: var(--space-m) 0;
+    /* margin: var(--space-m) 0; */
     flex: 1 1 auto;
 }
 
@@ -520,7 +519,7 @@ nav.u-flow a{
     margin: var(--space-s) var(--space-xs);
     padding: var(--space-m-l);
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     background-color: var(--color-light-yellow-green);
@@ -533,13 +532,12 @@ nav.u-flow a{
 .my-philosophy-card-text {
     display: flex;
     flex-direction: column;
-    gap: var(--space-s);
     width: 100%;
     padding: 0 var(--space-m);
 }
 
-.my-philosophy-card-text p {
-    margin: 0;
+.my-philosophy-card-text p:first-of-type {
+    margin-top: 0;
 }
 
 .my-philosophy-card img {
@@ -548,7 +546,7 @@ nav.u-flow a{
 
 @media screen and (min-width: 992px) {
     .my-philosophy-card {
-        flex-direction: row-reverse;
+        flex-direction: row;
         max-width: 40rem;
     }
 }
