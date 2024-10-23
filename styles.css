@@ -179,12 +179,12 @@ h4 {
 }
 
 /* Utility Classes */
-.u-flow > * + * {
-    margin-block-start: var(--space-s);
+.flow > * + * {
+    margin-top: var(--space-s, 1em);
 }
 
-.u-flow--m > * + * {
-    margin-block-start: var(--space-m);
+.flow--m > * + * {
+    margin-top: var(--space-m, 0.6em);
 }
 
 /* Global Styles */
