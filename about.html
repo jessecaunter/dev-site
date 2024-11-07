@@ -14,16 +14,16 @@
   </head>
   <body>
     <header>
-      <nav class="nav">
-        <a href="index.html" class="btn">Home</a>
+      <nav class="nav nav--bar">
+        <a class="nav__link" href="index.html">Home</a>
       </nav>
     </header>
 
     <main>
       <!-- HERO SECTION -->
-      <section class="hero hero--about flow--m">
-        <h1 class="blockheading blockheading--primary">About Me</h1>
-        <p class="hero__tagline blockheading blockheading--secondary">
+      <section class="hero hero--centered hero__background--about flow--m">
+        <h1 class="hero__heading--centered hero__heading--block">About Me</h1>
+        <p class="hero__tagline hero__tagline--centered hero__tagline--block">
           Passionate full stack developer dedicated to creating seamless digital
           experiences.
         </p>
@@ -33,23 +33,23 @@
       <section class="section section--ivory flow--m">
         <h2 class="section__heading">A few of my top skills</h2>
         <div class="container container--skills">
-          <article class="item item--skill skill">
-            <div class="skill-img-container">
+          <article class="item item--skill">
+            <div class="item__icon">
               <img
                 src="img/react.png"
-                class="static-img"
+                class="item__icon--static"
                 width="90"
                 alt="React static icon"
               />
               <img
                 src="img/react.gif"
-                class="gif-img"
+                class="item__icon--animated"
                 width="90"
                 alt="React animated icon"
               />
             </div>
-            <div class="skill-text-container flow">
-              <h3>React</h3>
+            <div class="item__copy-container flow">
+              <h3 class="item__heading">React</h3>
               <p>
                 Comfortable with building applications using React, either in
                 JavaScript or TypeScript. Experienced with creating both
@@ -58,23 +58,23 @@
               </p>
             </div>
           </article>
-          <article class="item item--skill skill">
-            <div class="skill-img-container">
+          <article class="item item--skill">
+            <div class="item__icon">
               <img
                 src="img/browser.png"
-                class="static-img"
+                class="item__icon--static"
                 width="90"
                 alt="UI/UX Design static icon"
               />
               <img
                 src="img/browser.gif"
-                class="gif-img"
+                class="item__icon--animated"
                 width="90"
                 alt="UI/UX Design animated icon"
               />
             </div>
-            <div class="skill-text-container flow">
-              <h3>UI/UX Design</h3>
+            <div class="item__copy-container flow">
+              <h3 class="item__heading">UI/UX Design</h3>
               <p>
                 Proficient in CSS and UI/UX design principles, creating visually
                 appealing and user-friendly interfaces. Experienced with modern
@@ -83,23 +83,23 @@
               </p>
             </div>
           </article>
-          <article class="item item--skill skill">
-            <div class="skill-img-container">
+          <article class="item item--skill">
+            <div class="item__icon">
               <img
                 src="img/backend.png"
-                class="static-img"
+                class="item__icon--static"
                 width="90"
                 alt="Backend static icon"
               />
               <img
                 src="img/backend.gif"
-                class="gif-img"
+                class="item__icon--animated"
                 width="90"
                 alt="Backend animated icon"
               />
             </div>
-            <div class="skill-text-container flow">
-              <h3>Backend</h3>
+            <div class="item__copy-container flow">
+              <h3 class="item__heading">Backend</h3>
               <p>
                 Skilled in backend development using Node.js and Express.
                 Experienced in building RESTful APIs, handling database
@@ -115,69 +115,74 @@
       <!-- PROJECTS SECTION -->
       <section class="section section--yellowgreen flow--m">
         <h2 class="section__heading">Some of my work</h2>
-        <div class="container container--projects projects-container">
-          <article class="item item--project project">
-            <div class="project-img-container">
+        <div class="container container--projects">
+          <article class="item item--project">
+            <div class="item__image-container">
               <img
                 src="img/muscle-mastery.jpg"
                 alt="Logo for the fitness website Muscle Mastery: The Science & Art of Bodybuilding"
-                class="project-img contain"
-                id="muscle-mastery"
+                class="item__image item__image--contain item__image--muscle-mastery"
               />
             </div>
-            <div class="project-details flow">
-              <h3>Muscle Mastery</h3>
-              <p>
+            <div
+              class="item__copy-container item__copy-container--project flow"
+            >
+              <h3 class="item__heading">Muscle Mastery</h3>
+              <p class="item__description">
                 A website featuring bodybuilding-related articles, written in
                 HTML and CSS.
               </p>
               <a
                 href="https://muscle-mastery.netlify.app/"
                 target="_blank"
-                class="btn"
+                class="button item__button"
                 >View Website</a
               >
             </div>
           </article>
-          <article class="item item--project project">
-            <div class="project-img-container">
+          <article class="item item--project">
+            <div class="item__image-container">
               <img
                 src="img/timepiece.jpg"
                 alt="Image of a clock face with gold hands and numbers, set against a black background"
-                class="project-img"
+                class="item__image"
               />
             </div>
-            <div class="project-details flow">
-              <h3>Timepiece</h3>
-              <p>
+            <div
+              class="item__copy-container item__copy-container--project flow"
+            >
+              <h3 class="item__heading">Timepiece</h3>
+              <p class="item__description">
                 Basic analog and digital clocks created with React and SCSS.
               </p>
               <a
                 href="https://github.com/jessecaunter/timepiece"
                 target="_blank"
-                class="btn"
+                class="button item__button"
                 >View Repository</a
               >
             </div>
           </article>
-          <article class="item item--project project">
-            <div class="project-img-container">
+          <article class="item item--project">
+            <div class="item__image-container">
               <img
                 src="img/project-euler.jpg"
                 alt="Project 2 screenshot"
-                class="project-img"
+                class="item__image"
               />
             </div>
-            <div class="project-details flow">
-              <h3>Project Euler</h3>
-              <p>
+            <div
+              class="item__copy-container item__copy-container--project flow"
+            >
+              <h3 class="item__heading">Project Euler</h3>
+              <p class="item__description">
                 A collection of Python algorithms I've written to solve various
                 mathematical problems.
               </p>
               <a
                 href="https://github.com/jessecaunter/project-euler-solutions"
                 target="_blank"
-                class="btn"
+                class="button item__button"
                 >View Repository</a
               >
             </div>
@@ -186,15 +191,18 @@
       </section>
 
       <!-- MY PHILOSOPHY SECTION -->
-      <section class="section my-philosophy-section">
-        <div class="my-philosophy-card">
+      <section class="section">
+        <div class="item item--philosophy">
           <img
             src="img/jesse.jpg"
             width="160"
             alt="Jesse Caunter, wearing aviator sunglasses, stands in front of a bright blue sky"
+            class="item__portrait"
           />
-          <div class="my-philosophy-card-text flow">
-            <p>
+          <div
+            class="item__copy-container item__copy-container--philosophy flow"
+          >
+            <p class="item__description--philosophy">
               Coding is not just a profession for me, it's a passion. I thrive
               on solving complex problems and delivering innovative solutions.
             </p>
@@ -204,14 +212,16 @@
       </section>
     </main>
 
-    <footer>
-      <div class="footer-container">
+    <footer class="section footer">
+      <div class="container">
         <a
+          class="footer__element footer__link"
           href="https://www.flaticon.com/free-animated-icons/react"
           title="react animated icons"
           ><small>React animated icons created by Freepik - Flaticon</small></a
         >
         <a
+          class="footer__element footer__link"
           href="https://www.flaticon.com/free-animated-icons/browser"
           title="browser animated icons"
           ><small
@@ -219,22 +229,24 @@
           ></a
         >
         <a
+          class="footer__element footer__link"
           href="https://www.flaticon.com/free-animated-icons/database"
           title="database animated icons"
           ><small
             >Database animated icons created by Freepik - Flaticon</small
           ></a
         >
-
-        <p>
+        <p class="footer__element">
           <small>
             Photo by
             <a
+              class="footer__link"
               href="https://unsplash.com/@marekpiwnicki?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
               >Marek Piwnicki</a
             >
             on
             <a
+              class="footer__link"
               href="https://unsplash.com/photos/a-very-tall-mountain-covered-in-snow-under-a-cloudy-sky-fgZO-k47XTQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
               >Unsplash</a
             >
