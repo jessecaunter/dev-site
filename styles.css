@@ -191,7 +191,17 @@ h4 {
 .wrapper {
     margin-inline: auto;
     padding-inline: 1rem;
-    width: 1200px;
+    max-width: 1200px;
+}
+
+.wrapper--full {
+    width: 100%;
+}
+
+.wrapper--centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .button {
@@ -269,7 +279,8 @@ h4 {
 .hero {
     display: flex;
     flex-direction: column;
-    padding: var(--space-xl-3xl);
+    height: 100%;
+    padding: var(--space-s-m);
 }
 
 .hero--centered {
@@ -333,7 +344,6 @@ h4 {
     background-color: var(--color-gray-silver);
     padding: var(--space-3xs) var(--space-xs);
     border-radius: 0.8rem;
-    max-width: 1200px;
 }
 
 .hero__tagline--centered {
