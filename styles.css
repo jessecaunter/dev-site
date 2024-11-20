@@ -228,7 +228,6 @@ h4 {
     padding: 0 var(--space-xs-s);
     flex-wrap: wrap;
     width: 100%;
-    max-width: 1200px;
 }
 
 .container--projects {
@@ -382,8 +381,7 @@ h4 {
     border-bottom-left-radius: 12rem;
     border-bottom-right-radius: 12rem;
     box-shadow: 0 0.3rem 0.4rem rgba(0, 0, 0, 0.1);
-    width: 30rem;
-    max-width: 95%;
+    max-width: 30rem;
     text-align: center;
     transition: box-shadow 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out;
@@ -566,7 +564,7 @@ h4 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: var(--space-xl-2xl) var(--space-xs-s);
+    padding: var(--space-xl-2xl) 0;
 }
 
 .section--ivory {
