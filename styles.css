@@ -25,10 +25,10 @@ figure, blockquote, dl, dd {
 /* Palette */
 :root {
     --color-rose-taupe: #855d58;
-    --color-ghost-white: #fafaff;
     --color-gray-silver: #ada39e;
-    --color-ivory: #ffffef;
     --color-light-yellow-green: #F2F6DD;
+    --color-ivory: #ffffef;
+    --color-ghost-white: #fafaff;
 
     /* Breakpoints:
     tablet-portrait: 600px;
@@ -153,8 +153,6 @@ figure, blockquote, dl, dd {
 }
 
 body {
-    color: var(--color-rose-taupe);
-    background: var(--color-ghost-white);
     font-size: var(--step-0);
     font-family: "Acme", sans-serif;
     line-height: 1.6;
@@ -209,11 +207,39 @@ h4 {
     padding-top: var(--space-s-l);
 }
 
-.button {
+/* Design Tokens */
+
+.bg-primary {
+    background: var(--color-rose-taupe);
+}
+
+.bg-secondary {
+    background: var(--color-gray-silver);
+}
+
+.bg-tertiary {
+    background: var(--color-light-yellow-green);
+}
+
+.bg-ivory {
+    background: var(--color-ivory);
+}
+
+.bg-ghost-white {
     background: var(--color-ghost-white);
+}
+
+.color-primary {
+    color: var(--color-rose-taupe);
+}
+
+.color-ghost-white {
+    color: var(--color-ghost-white);
+}
+
+.button {
     border: none;
     padding: var(--space-xs) var(--space-m);
-    color: var(--color-rose-taupe);
     font-size: var(--step-0);
     font-family: "Acme", sans-serif;
     font-weight: bold;
@@ -261,8 +287,6 @@ h4 {
 }
 
 .footer {
-    color: var(--color-ghost-white);
-    background: var(--color-rose-taupe);
     font-weight: bold;
     text-align: center;
 }
@@ -272,7 +296,6 @@ h4 {
 }
 
 .footer__link {
-    color: var(--color-ghost-white);
     text-decoration: none;
 }
 
@@ -325,8 +348,6 @@ h4 {
 }
 
 .hero__heading--block {
-    color: var(--color-ghost-white);
-    background-color: var(--color-rose-taupe);
     padding: var(--space-3xs) var(--space-xs);
     border-radius: 0.8rem;
 }
@@ -344,8 +365,6 @@ h4 {
 }
 
 .hero__tagline--block {
-    color: var(--color-ghost-white);
-    background-color: var(--color-gray-silver);
     padding: var(--space-3xs) var(--space-xs);
     border-radius: 0.8rem;
 }
@@ -367,7 +386,6 @@ h4 {
 .item--philosophy {
     align-items: center;
     padding: var(--space-m-l);
-    background-color: var(--color-light-yellow-green);
     border-radius: 1rem;
     border-bottom: var(--space-2xs) solid var(--color-rose-taupe);
     gap: var(--space-s-m);
@@ -382,7 +400,6 @@ h4 {
 }
 
 .item--project {
-    background: var(--color-ghost-white);
     border-bottom-left-radius: 12rem;
     border-bottom-right-radius: 12rem;
     box-shadow: 0 0.3rem 0.4rem rgba(0, 0, 0, 0.1);
@@ -453,7 +470,6 @@ h4 {
 }
 
 .item__button {
-    background: var(--color-light-yellow-green);
     flex: 0 0 auto;
 }
 
@@ -489,7 +505,7 @@ h4 {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background-color: white;
+    background-color: white; /* Pure white color to match the icon background */
     padding: var(--space-m);
     box-shadow: 0 0 var(--space-xs) rgba(0, 0, 0, 0.1) inset;
 }
@@ -515,7 +531,7 @@ h4 {
 }
 
 .item__image--muscle-mastery {
-    background-color: #60777f;
+    background-color: #60777f; /* Specific color to match the background of the Muscle Mastery logo */
 }
 
 .item__image-container {
@@ -534,17 +550,12 @@ h4 {
     align-items: center;
 }
 
-.nav--bar {
-    background-color: var(--color-gray-silver);
-}
-
 .nav--buttons {
     gap: var(--space-xs-s);
 }
 
 .nav__link {
     display: block;
-    color: var(--color-ghost-white);
     text-align: center;
     text-decoration: none;
     padding: var(--space-2xs) var(--space-s);
@@ -570,15 +581,6 @@ h4 {
     justify-content: center;
     align-items: center;
     padding: var(--space-xl-2xl) 0;
-}
-
-.section--ivory {
-    background-color: var(--color-ivory);
-
-}
-
-.section--yellowgreen {
-    background-color: var(--color-light-yellow-green);
 }
 
 .section__heading {
