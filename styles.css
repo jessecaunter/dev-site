@@ -208,7 +208,6 @@ h4 {
 }
 
 /* Design Tokens */
-
 .bg-primary {
     background: var(--color-rose-taupe);
 }
@@ -237,6 +236,7 @@ h4 {
     color: var(--color-ghost-white);
 }
 
+/* Blocks */
 .button {
     border: none;
     padding: var(--space-xs) var(--space-m);
@@ -445,7 +445,7 @@ h4 {
         text-align: left;
     }
 
-    .item--skill:nth-child(odd) {
+    .item--skill[data-state='reversed'] {
         flex-direction: row-reverse;
     }
 }
@@ -457,7 +457,7 @@ h4 {
         text-align: center;
     }
 
-    .item--skill:nth-child(odd) {
+    .item--skill[data-state='reversed'] {
         flex-direction: column;
     }
 }
