@@ -12,12 +12,14 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Jesse Caunter | Portfolio</title>
   </head>
-  <body class="[ bg-ghost-white color-primary ]">
-    <nav class="[ nav ] [ bg-secondary ]">
-      <div class="[ wrapper wrapper--full ]">
-        <ul class="[ nav__list ]">
+  <body
+    class="[ margin-0 ] [ bg-ghost-white color-primary font-acme font-size-0 ]"
+  >
+    <nav class="[ bg-secondary ]">
+      <div class="[ wrapper ]">
+        <ul class="[ nav-bar ] [ flex-row margin-0 padding-0 ]">
           <li>
-            <a class="[ nav__link ] [ color-ghost-white ]" href="index.html"
+            <a class="[ nav-bar__item ] [ color-ghost-white ]" href="index.html"
               >Home</a
             >
           </li>
@@ -26,17 +28,17 @@
     </nav>
 
     <main>
-      <section class="[ hero__background--about ]">
+      <section class="[ hero--about ]">
         <div
-          class="[ hero hero--centered ] [ wrapper wrapper--centered flow--m ]"
+          class="[ wrapper flex-column justify-center align-center height-full padding-s-l ] [ flow-m ]"
         >
           <h1
-            class="[ hero__heading--centered hero__heading--block ] [ bg-primary color-ghost-white ]"
+            class="[ card ] [ text-center padding-3xs-xs ] [ bg-primary color-ghost-white ]"
           >
             About Me
           </h1>
           <p
-            class="[ hero__tagline hero__tagline--centered hero__tagline--block ] [ bg-secondary color-ghost-white ]"
+            class="[ card ] [ text-center padding-3xs-xs ] [ bg-secondary color-ghost-white font-size-2 ]"
           >
             Passionate full stack developer dedicated to creating seamless
             digital experiences.
@@ -45,26 +47,29 @@
       </section>
 
       <section class="[ section ] [ bg-ivory ]">
-        <div class="[ wrapper flow--m ]">
-          <h2 class="[ section__heading ]">A few of my top skills</h2>
-          <div class="[ container container--skills ]">
-            <article class="[ item item--skill ]" data-state="reversed">
-              <div class="[ item__icon ]">
+        <div class="[ wrapper flow-m ]">
+          <h2 class="[ text-center margin-0 ]">A few of my top skills</h2>
+          <div class="[ container container--skills ] [ flex-column gap-m ]">
+            <article
+              class="[ item item--skill ] [ flex-column align-center text-center gap-s ]"
+              data-state="reversed"
+            >
+              <div class="[ badge ] [ padding-m ] [ bg-white ]">
                 <img
                   src="img/react.png"
-                  class="[ item__icon--static ]"
+                  class="[ icon ]"
                   width="90"
                   alt="React static icon"
                 />
                 <img
                   src="img/react.gif"
-                  class="[ item__icon--animated ]"
+                  class="[ icon--animated ]"
                   width="90"
                   alt="React animated icon"
                 />
               </div>
-              <div class="[ item__copy-container ] [ flow ]">
-                <h3 class="[ item__heading ]">React</h3>
+              <div class="[ flex-column ] [ flow ]">
+                <h3 class="[ margin-0 ]">React</h3>
                 <p>
                   Comfortable with building applications using React, either in
                   JavaScript or TypeScript. Experienced with creating both
@@ -73,23 +78,25 @@
                 </p>
               </div>
             </article>
-            <article class="[ item item--skill ]">
-              <div class="[ item__icon ]">
+            <article
+              class="[ item item--skill ] [ flex-column align-center text-center gap-s ]"
+            >
+              <div class="[ badge ] [ padding-m ] [ bg-white ]">
                 <img
                   src="img/browser.png"
-                  class="[ item__icon--static ]"
+                  class="[ icon ]"
                   width="90"
                   alt="UI/UX Design static icon"
                 />
                 <img
                   src="img/browser.gif"
-                  class="[ item__icon--animated ]"
+                  class="[ icon--animated ]"
                   width="90"
                   alt="UI/UX Design animated icon"
                 />
               </div>
-              <div class="[ item__copy-container ] [ flow ]">
-                <h3 class="[ item__heading ]">UI/UX Design</h3>
+              <div class="[ flex-column ] [ flow ]">
+                <h3 class="[ margin-0 ]">UI/UX Design</h3>
                 <p>
                   Proficient in CSS and UI/UX design principles, creating
                   visually appealing and user-friendly interfaces. Experienced
@@ -98,23 +105,26 @@
                 </p>
               </div>
             </article>
-            <article class="[ item item--skill ]" data-state="reversed">
-              <div class="[ item__icon ]">
+            <article
+              class="[ item item--skill ] [ flex-column align-center text-center gap-s ]"
+              data-state="reversed"
+            >
+              <div class="[ badge ] [ padding-m ] [ bg-white ]">
                 <img
                   src="img/backend.png"
-                  class="[ item__icon--static ]"
+                  class="[ icon ]"
                   width="90"
                   alt="Backend static icon"
                 />
                 <img
                   src="img/backend.gif"
-                  class="[ item__icon--animated ]"
+                  class="[ icon--animated ]"
                   width="90"
                   alt="Backend animated icon"
                 />
               </div>
-              <div class="[ item__copy-container ] [ flow ]">
-                <h3 class="[ item__heading ]">Backend</h3>
+              <div class="[ flex-column ] [ flow ]">
+                <h3 class="[ margin-0 ]">Backend</h3>
                 <p>
                   Skilled in backend development using Node.js and Express.
                   Experienced in building RESTful APIs, handling database
@@ -128,22 +138,24 @@
         </div>
       </section>
 
-      <section class="[ section ] [ bg-tertiary ]">
-        <div class="[ wrapper flow--m ]">
-          <h2 class="[ section__heading ]">Some of my work</h2>
-          <div class="[ container container--projects ]">
-            <article class="[ item item--project ] [ bg-ghost-white ]">
+      <section class="[ section ] [ flex-column ] [ bg-tertiary ]">
+        <div class="[ wrapper flow-m ]">
+          <h2 class="[ text-center margin-0 ]">Some of my work</h2>
+          <div class="[ container container--projects ] [ flex-column gap-m ]">
+            <article
+              class="[ item item--project ] [ flex-column text-center ] [ bg-ghost-white ]"
+            >
               <div class="[ item__image-container ]">
                 <img
                   src="img/muscle-mastery.jpg"
                   alt="Logo for the fitness website Muscle Mastery: The Science & Art of Bodybuilding"
-                  class="[ item__image item__image--contain item__image--muscle-mastery ]"
+                  class="[ item__image item__image--contain item__image--muscle-mastery ] [ width-full height-full ]"
                 />
               </div>
               <div
-                class="[ item__copy-container item__copy-container--project ] [ flow ]"
+                class="[ item__copy-container--project ] [ flex-column align-center ] [ flow ]"
               >
-                <h3 class="[ item__heading ]">Muscle Mastery</h3>
+                <h3 class="[ margin-0 ]">Muscle Mastery</h3>
                 <p class="[ item__description ]">
                   A website featuring bodybuilding-related articles, written in
                   HTML and CSS.
@@ -156,18 +168,20 @@
                 >
               </div>
             </article>
-            <article class="[ item item--project ] [ bg-ghost-white ]">
+            <article
+              class="[ item item--project ] [ flex-column text-center ] [ bg-ghost-white ]"
+            >
               <div class="[ item__image-container ]">
                 <img
                   src="img/timepiece.jpg"
                   alt="Image of a clock face with gold hands and numbers, set against a black background"
-                  class="[ item__image ]"
+                  class="[ item__image ] [ width-full height-full ]"
                 />
               </div>
               <div
-                class="[ item__copy-container item__copy-container--project ] [ flow ]"
+                class="[ item__copy-container--project ] [ flex-column align-center ] [ flow ]"
               >
-                <h3 class="[ item__heading ]">Timepiece</h3>
+                <h3 class="[ margin-0 ]">Timepiece</h3>
                 <p class="[ item__description ]">
                   Basic analog and digital clocks created with React and SCSS.
                 </p>
@@ -179,18 +193,20 @@
                 >
               </div>
             </article>
-            <article class="[ item item--project ] [ bg-ghost-white ]">
+            <article
+              class="[ item item--project ] [ flex-column text-center ] [ bg-ghost-white ]"
+            >
               <div class="[ item__image-container ]">
                 <img
                   src="img/project-euler.jpg"
                   alt="Project 2 screenshot"
-                  class="[ item__image ]"
+                  class="[ item__image ] [ width-full height-full ]"
                 />
               </div>
               <div
-                class="[ item__copy-container item__copy-container--project ] [ flow ]"
+                class="[ item__copy-container--project ] [ flex-column align-center ] [ flow ]"
               >
-                <h3 class="[ item__heading ]">Project Euler</h3>
+                <h3 class="[ margin-0 ]">Project Euler</h3>
                 <p class="[ item__description ]">
                   A collection of Python algorithms I've written to solve
                   various mathematical problems.
@@ -207,9 +223,11 @@
         </div>
       </section>
 
-      <section class="[ section ]">
+      <section class="[ section ] [ flex-column ]">
         <div class="[ wrapper ]">
-          <div class="[ item item--philosophy ] [ bg-tertiary ]">
+          <div
+            class="[ item item--philosophy ] [ card ] [ flex-column align-center padding-m-l gap-s-m ] [ bg-tertiary ]"
+          >
             <img
               src="img/jesse.jpg"
               width="160"
@@ -217,7 +235,7 @@
               class="[ item__portrait ]"
             />
             <div
-              class="[ item__copy-container item__copy-container--philosophy ] [ flow ]"
+              class="[ item__copy-container--philosophy ] [ flex-column ] [ flow ]"
             >
               <p class="[ item__description--philosophy ]">
                 Coding is not just a profession for me, it's a passion. I thrive
@@ -230,11 +248,13 @@
       </section>
     </main>
 
-    <footer class="[ footer ] [ section ] [ bg-primary color-ghost-white ]">
+    <footer
+      class="[ footer ] [ section ] [ flex-column text-center ] [ bg-primary color-ghost-white ]"
+    >
       <div class="[ wrapper ]">
-        <div class="[ container ]">
+        <div class="[ container ] [ flex-column ]">
           <a
-            class="[ footer__element footer__link ] [ color-ghost-white ]"
+            class="[ footer__link ] [ margin-0 ] [ color-ghost-white ]"
             href="https://www.flaticon.com/free-animated-icons/react"
             title="react animated icons"
             ><small
@@ -242,7 +262,7 @@
             ></a
           >
           <a
-            class="[ footer__element footer__link ] [ color-ghost-white ]"
+            class="[ footer__link ] [ margin-0 ] [ color-ghost-white ]"
             href="https://www.flaticon.com/free-animated-icons/browser"
             title="browser animated icons"
             ><small
@@ -250,14 +270,14 @@
             ></a
           >
           <a
-            class="[ footer__element footer__link ] [ color-ghost-white ]"
+            class="[ footer__link ] [ margin-0 ] [ color-ghost-white ]"
             href="https://www.flaticon.com/free-animated-icons/database"
             title="database animated icons"
             ><small
               >Database animated icons created by Freepik - Flaticon</small
             ></a
           >
-          <p class="[ footer__element ]">
+          <p class="[ margin-0 ]">
             <small>
               Photo by
               <a
